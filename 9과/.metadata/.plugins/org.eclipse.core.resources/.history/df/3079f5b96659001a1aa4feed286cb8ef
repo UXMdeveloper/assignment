@@ -1,0 +1,29 @@
+import javax.swing.*;
+import java.awt.*;
+
+
+public class Ex02 extends JFrame{
+	Ex02(){
+		setTitle("레이블 예제");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		Container c= getContentPane();
+		c.setLayout(new FlowLayout());
+		
+		JLabel textLabel = new JLabel("안녕");
+		
+		ImageIcon img = new ImageIcon("images/gosling.jpg");
+		JLabel imageLabel = new JLabel(img);
+		
+		ImageIcon icon = new ImageIcon("images/icon.gif");
+		JLabel label = new JLabel("ㅎㅎ");
+		
+		c.add(textLabel); c.add(imageLabel); c.add(label);
+		setSize(300,,500);
+		setVisible(true);
+	}
+	public static void main(String[] args) {
+		//JLabel textLabel = new JLabel("사랑합니다");
+		// ImageIconimage = new ImageIcon("images/sunset.jpg");
+		
+	}
+}

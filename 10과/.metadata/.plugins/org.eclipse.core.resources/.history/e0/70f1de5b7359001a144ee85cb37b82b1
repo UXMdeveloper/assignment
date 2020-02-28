@@ -1,0 +1,33 @@
+//JMenuBar만들고 JMenu붙이고 각각 개별요소는 JMenuItem.
+import javax.swing.*;
+
+public class MenuEx extends JFrame{
+	MenuEx(){
+		setTitle("Menu 만들기 예제");
+		createMenu();
+		setSize(250,200);
+		setVisible(true);
+		
+	}
+	void createMenu() {
+		JMenuBar mb = new JMenuBar();
+		JMenu screenMenu = new JMenu("Screen");
+		
+		screenMenu.add(new JMenuItem("Load"));
+		screenMenu.add(new JMenuItem("Hide"));
+		screenMenu.add(new JMenuItem("Reshow"));
+		screenMenu.addSeparator();
+		screenMenu.add(new JMenuItem("Exit"));
+		
+		mb.add(screenMenu);
+		mb.add(new JMenu("Edit"));
+		mb.add(new JMenu("Source"));
+		mb.add(new JMenu("Project"));
+		mb.add(new JMenu("Run"));
+		setJMenuBar(mb);
+		
+	}
+	public static void main(String [] args) {
+		new JMenuItem();
+	}
+}

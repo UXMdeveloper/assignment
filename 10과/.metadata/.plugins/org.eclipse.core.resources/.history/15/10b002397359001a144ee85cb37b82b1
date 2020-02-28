@@ -1,0 +1,4 @@
+//JMenuBar만들고 JMenu붙이고 각각 개별요소는 JMenuItem.
+public class JMenuItem {
+
+}
